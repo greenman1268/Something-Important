@@ -1,0 +1,14 @@
+Note #1
+git clone git@github.com:devlabuser/sharp.git 
+$ git checkout -b dev origin/dev
+
+git status
+git add <file1> <file2> ...
+git commit -m 'Комментарий к коммиту'
+$ git rm <file1> <file2> ...
+$ git push origin dev <file1> <file2> ...
+
+Note #2
+translate words!!
+Centuries - Fall Out Boy  --> text!!!
+push tasks!!
