@@ -7,6 +7,7 @@ git commit -m 'Комментарий к коммиту'
 $ git rm <file1> <file2> ...
 $ git push origin dev <file1> <file2> ...
 
+show variables like 'datadir'
 powercfg настройки батареи
 net use x:\\vboxsvr\1
 secedit /export /cfg c:\security_settings.inf
