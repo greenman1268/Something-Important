@@ -9,7 +9,10 @@ var username = "";
 			prevState = prevState + "<br>";
 		}
 
-		$("#container").html(prevState + "<span class = 'bot'>Chatbot: </span>" + message);
+		$("#container").html(prevState + "<span class = 'current_message'>" + "<span class = 'bot'>Chatbot: </span>" + message + "</span>");
+		$(".current_message").hide();
+		$(".current_message").delay(500).fadeIn();
+		$(".current_message").removeClass("current_message");
 
 	}
 
@@ -22,6 +25,21 @@ var username = "";
 			username = message;
 			send_message("Nice to meet you " + username + ", how are you doing?");
 		}
+
+		if(message.indexOf("how are you")>=0){
+			send_message("Thanks, I am good!");
+		}
+
+		if( (message.indexOf("time")>=0) || (message.indexOf("hours")>=0)){
+			var date = new Date();
+			var h = date.getHours();
+			var m = date.getMinutes();
+			send_message("Current time is: " + h + ":" + m);
+		}
+
+
+		}
+
 	}
 
 	$(function(){
